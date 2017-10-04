@@ -270,12 +270,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg shoping-bag" style="padding-top:5px;">
 				
 				<div class="shoping-bag col-lg-3 col-sm-3 col-xs-6 pull-right">         
-					<button type="button" class="btn btn-sm btn-success pull-right">
+					<button type="button" class="btn btn-xs btn-success pull-right">
 						Checkout <span class="glyphicon glyphicon-play"></span>
 					</button>
 				</div>
 				<div class="shoping-bag col-lg-3 col-sm-3 col-xs-6 pull-right">
-					<a href="index.php" type="button" class="btn btn-sm btn-default">
+					<a href="index.php" type="button" class="btn btn-xs btn-default">
 						<span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
 					</a>
 				</div>
