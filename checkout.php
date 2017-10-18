@@ -17,6 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="js/rajaongkir.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
@@ -245,7 +246,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </table>
 			
 			<div class="col-xs-12 shoping-bag" style="border-bottom: 1px solid #ccc;">
-
+				
+				<div class="shoping-bag col-lg-6 col-sm-6 col-xs-12">   
+                        <select id="province" name="province" class="input-sm col-xs-12">
+                            <option value="0" selected="selected">(please select a province)</option>
+                            <?php include 'modul/rajaongkir.php';?>
+                            <?php get_province();?>
+						</select>
+						 <select id="city" name="city" class="input-sm col-xs-12">
+                            <option value="0" selected="selected">(please select a city)</option>
+                            
+						</select>
+                </div>
 				<div class="shoping-bag col-lg-3 col-sm-3 col-xs-6 pull-right">        
 						<div class="text-right"><h5><strong><?php echo number_format($total_belanja); ?><br>-</strong></h5><h3>Rp <?php echo number_format($total_belanja); ?></h3></div>
                 </div>

@@ -2917,6 +2917,13 @@ p.right {
 	}
 }
 @media screen and (max-width: 320px) {	
+	.login-daftar {
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+	margin:5px 5px 0 0;
+	}
+	
 	.header-top-left {
 		width: 100%;
 		
@@ -2937,7 +2944,7 @@ p.right {
 		margin-top: 6px;
 	}
 	.logo h1 a {
-		font-size: 21px;
+		font-size: 20px;
 	}
 	.navbar-toggle {
 		padding: 7px 7px;
