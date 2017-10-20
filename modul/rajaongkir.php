@@ -85,7 +85,6 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS => "origin=256&destination=$destination&weight=1000&courier=jne",
-  CURLOPT_POSTFIELDS => "origin=256&destination=$destination&weight=1000&courier=pos",
   CURLOPT_HTTPHEADER => array(
     "content-type: application/x-www-form-urlencoded",
     "key: 6a9589b574e020b90d72190d410437ff"
