@@ -11,5 +11,15 @@ $(document).ready(function(){
 		});
 		});
 	
+	$("#city").click(function(){
+		var b = $('#city').val();
+		$.ajax({
+		type: 'POST',
+		url: "modul/rajaongkir.php",
+		data: "city="+b,
+		success: function(cost) {
+		$("#cost").html(cost);   }
+		});
+		});
 	
 });

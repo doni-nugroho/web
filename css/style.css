@@ -2739,6 +2739,10 @@ p.right {
 		width: 20%;
 		margin-right: 2%;
 	}
+	.rincian-harga{
+		width: 100%;
+		float:left;
+	}
 }
 @media screen and (max-width: 480px) {	
 	.header-right {
