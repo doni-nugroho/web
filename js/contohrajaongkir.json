@@ -1,0 +1,97 @@
+{"rajaongkir":{
+	"query":{
+		"origin":"256",
+		"destination":"419",
+		"weight":1000,
+		"courier":"jne"
+		},
+	"status":{
+		"code":200,
+		"description":"OK"
+		},
+	"origin_details":{
+		"city_id":"256",
+		"province_id":"11",
+		"province":"Jawa Timur",
+		"type":"Kota",
+		"city_name":"Malang",
+		"postal_code":"65112"
+		},
+	"destination_details":{
+		"city_id":"419",
+		"province_id":"5",
+		"province":"DI Yogyakarta",
+		"type":"Kabupaten",
+		"city_name":"Sleman",
+		"postal_code":"55513"
+		},
+	"results":[
+		{
+			"code":"jne",
+			"name":"Jalur Nugraha Ekakurir (JNE)",
+			"costs":[
+				{	"service":"OKE",
+					"description":"Ongkos Kirim Ekonomis",
+					"cost":[
+						{
+							"value":11000,
+							"etd":"2-3",
+							"note":""
+						}
+					]
+				},
+				{	"service":"REG",
+					"description":"Layanan Reguler",
+					"cost":[
+						{	"value":12000,
+							"etd":"1-2",
+							"note":""
+						}
+					]
+				},
+				{	"service":"YES",
+					"description":"Yakin Esok Sampai",
+					"cost":[
+						{
+							"value":23000,
+							"etd":"1-1",
+							"note":""
+						}
+					]
+				}
+			]
+		}
+	]
+}
+}
+
+
+Array ( [0] => Array ( 	[code] => jne 
+						[name] => Jalur Nugraha Ekakurir (JNE) 
+						[costs] => Array ( 	[0] => Array ( 	[service] => OKE 
+															[description] => Ongkos Kirim Ekonomis 
+															[cost] => Array ( [0] => Array ( 	[value] => 11000 
+																								[etd] => 2-3 
+																								[note] => 
+																							) 
+																			) 
+														) 
+											[1] => Array ( 	[service] => REG 
+															[description] => Layanan Reguler 
+															[cost] => Array ( [0] => Array ( 	[value] => 12000 
+																								[etd] => 1-2 
+																								[note] => 
+																							) 
+																			) 
+														) 
+											[2] => Array ( 	[service] => YES 
+															[description] => Yakin Esok Sampai 
+															[cost] => Array ( [0] => Array ( 	[value] => 23000 
+																								[etd] => 1-1 
+																								[note] => 
+																							) 
+																			) 
+														) 
+										) 
+					) 
+	)

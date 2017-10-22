@@ -13,6 +13,9 @@ $(document).ready(function(){
 	
 	$("#city").click(function(){
 		var b = $('#city').val();
+		if(b<1){
+			$("#cost").html( "<option value='0' selected='selected'>(please select a courier)</option>" );
+		}else{
 		$.ajax({
 		type: 'POST',
 		url: "modul/rajaongkir.php",
@@ -20,6 +23,7 @@ $(document).ready(function(){
 		success: function(cost) {
 		$("#cost").html(cost);   }
 		});
-		});
+		}
+	});
 	
 });

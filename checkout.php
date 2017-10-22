@@ -257,7 +257,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <option value="0" selected="selected">(please select a city)</option>
                             
 						</select>
-						<h5 id="cost">cost</h5>
+						<select id="cost" name="cost" class="input-sm col-xs-12">
+                            <option value="0" selected="selected">(please select a courier)</option>
+                            
+						</select>
                 </div>
               
 				
