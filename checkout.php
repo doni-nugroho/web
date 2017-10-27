@@ -191,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
                         <td class="col-xs-6 col-sm-6 col-md-6 col-lg-4" style="padding: 4px;">
                         <div class="media">
-                            <a class="thumbnail pull-left" style="margin:0 10px 0 0; padding:4px" href="single.php?id=<?php echo $key ?>"> <img class="media-object" src="http://localhost/web/images/dridenim/<?php echo $data['gambar']?>" style="width: 72px; height: 72px;"> </a>
+                            <a class="thumbnail pull-left" style="margin:0 10px 0 0; padding:4px" href="single.php?id=<?php echo $key ?>"> <img class="media-object" src="images/dridenim/<?php echo $data['gambar']?>" style="width: 72px; height: 72px;"> </a>
                             <div class="table-xs media-body">
                                 <h4 class="media-heading" style="padding: 0px 0;"><a href="single.php?id=<?php echo $key ?>"><?php echo $data['nama_produk'] ?></a></h4>
                                 <h6 class="media-heading" style="padding: 0px 0;"> Categori: <a href="#"><?php echo $data['nama_kategori'] ?></a></h6>
@@ -248,18 +248,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-xs-12 shoping-bag" style="border-bottom: 1px solid #ccc;">
 				
 				<div class="shoping-bag col-lg-6 col-sm-6 col-xs-12 rincian-harga">   
-                        <select id="province" name="province" class="input-sm col-xs-12">
-                            <option value="0" selected="selected">(please select a province)</option>
-                            <?php include 'modul/rajaongkir.php';?>
+                        <?php include 'modul/rajaongkir.php';?>
+						<select id="province" name="province" class="input-sm col-xs-12 shoping-bag-font">
+                            <option value="0" >(please select a province)</option>
                             <?php get_province();?>
 						</select>
-						 <select id="city" name="city" class="input-sm col-xs-12">
-                            <option value="0" selected="selected">(please select a city)</option>
-                            
+						 <select id="city" name="city" class="input-sm col-xs-12 shoping-bag-font">
+                            <?php session_get_city();?>
 						</select>
-						<select id="cost" name="cost" class="input-sm col-xs-12">
-                            <option value="0" selected="selected">(please select a courier)</option>
-                            
+						<select id="cost" name="cost" class="input-sm col-xs-12 shoping-bag-font">
+                            <?php session_get_cost();?>                 
 						</select>
                 </div>
               

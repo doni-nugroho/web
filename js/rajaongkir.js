@@ -1,7 +1,20 @@
 $(document).ready(function(){
 	
-	$("#province").click(function(){
+	$("#province").change(function(){
+		
 		var a = $('#province').val();
+		
+		$.ajax({
+		type: 'POST',
+		url: "koneksi/alamat.php",
+		//data: "province="+a,
+		data: "province="+a,
+		});
+		
+		if(a < 1){
+			$("#city").html( "<option value='0' selected='selected'>(please select a city)</option>" );
+		}else{
+			
 		$.ajax({
 		type: 'POST',
 		url: "modul/rajaongkir.php",
@@ -9,13 +22,25 @@ $(document).ready(function(){
 		success: function(city) {
 		$("#city").html(city);   }
 		});
-		});
+		
+		}
+	});
 	
-	$("#city").click(function(){
+		
+	$("#city").change(function(){
+				
 		var b = $('#city').val();
-		if(b<1){
+		
+		$.ajax({
+		type: 'POST',
+		url: "koneksi/alamat.php",
+		data: "city="+b,
+		});
+		
+		if(b < 1){
 			$("#cost").html( "<option value='0' selected='selected'>(please select a courier)</option>" );
 		}else{
+		
 		$.ajax({
 		type: 'POST',
 		url: "modul/rajaongkir.php",
@@ -23,6 +48,7 @@ $(document).ready(function(){
 		success: function(cost) {
 		$("#cost").html(cost);   }
 		});
+		
 		}
 	});
 	

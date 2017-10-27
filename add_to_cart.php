@@ -53,7 +53,7 @@ require_once("koneksi.php");
          
         //header ("location:http://localhost/web/single.php?id=" . $id);
 		if (isset($_SESSION['items'])) {
-        header ("location:http://localhost/web/checkout.php");
+        header ("location:/web/checkout.php");
 		}
     }
 ?>
